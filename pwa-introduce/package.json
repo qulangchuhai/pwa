@@ -1,0 +1,30 @@
+{
+  "name": "pwa-introduce",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "start": "npx http-server dist -S -C pwa.anyi.com+4.pem -K pwa.anyi.com+4-key.pem -p 443 --index index.html"
+  },
+  "dependencies": {
+    "vue": "^3.4.26",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vite-pwa/assets-generator": "^0.2.4",
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.10",
+    "vite-plugin-pwa": "^0.20.0",
+    "vue-tsc": "^2.0.16",
+    "workbox-window": "^7.1.0"
+  },
+  "overrides": {
+    "sharp": "0.32.6",
+    "sharp-ico": "0.1.5"
+  }
+}
